@@ -1,5 +1,5 @@
 import React ,{Fragment, useEffect,useState} from 'react'
-import "../../css/profile.css";
+import "../../css/Profile.css";
 import { useDispatch, useSelector } from 'react-redux';
 import {updateUser} from "../../store/User/user-action";
 import {useForm} from "@tanstack/react-form";
