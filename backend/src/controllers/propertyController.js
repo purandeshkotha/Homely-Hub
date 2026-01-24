@@ -31,15 +31,22 @@ const getProperty = async (a, b) => {
                     images: n
                 } = a['body'], o = [];
             for (const q of n) {
-                const r = await a2a['upload']({
-                    'file': q['url'],
-                    'fileName': 'property_' + Date['now']() + '.jpg',
-                    'folder': 'property_images'
-                });
-                o['push']({
-                    'url': r['url'],
-                    'public_id': r['fileId']
-                });
+                if (a2a) {
+                    const r = await a2a['upload']({
+                        'file': q['url'],
+                        'fileName': 'property_' + Date['now']() + '.jpg',
+                        'folder': 'property_images'
+                    });
+                    o['push']({
+                        'url': r['url'],
+                        'public_id': r['fileId']
+                    });
+                } else {
+                    o['push']({
+                        'url': q['url'],
+                        'public_id': 'placeholder'
+                    });
+                }
             }
             const p = await Property['create']({
                 'propertyName': c,

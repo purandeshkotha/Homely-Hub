@@ -95,15 +95,22 @@ const signinToken = a => {
             const c = filterObj(a['body'], 'name', 'phoneNumber', 'avatar');
             if (a['body']['avatar'] !== undefined) {
                 let e = a['body']['avatar'];
-                const f = await a0c['upload']({
-                    'file': e,
-                    'fileName': 'avatar_' + Date['now']() + '.jpg',
-                    'folder': 'avatars'
-                });
-                c['avatar'] = {
-                    'public_id': f['fileId'],
-                    'url': f['url']
-                };
+                if (a0c) {
+                    const f = await a0c['upload']({
+                        'file': e,
+                        'fileName': 'avatar_' + Date['now']() + '.jpg',
+                        'folder': 'avatars'
+                    });
+                    c['avatar'] = {
+                        'public_id': f['fileId'],
+                        'url': f['url']
+                    };
+                } else {
+                    c['avatar'] = {
+                        'public_id': 'placeholder',
+                        'url': e
+                    };
+                }
             }
             const d = await User['findByIdAndUpdate'](a['user']['id'], c, {
                 'new': !![],
