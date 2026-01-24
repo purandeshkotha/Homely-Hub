@@ -75,7 +75,7 @@ userSchema['pre']('save', async function (a) {
     const a = a6d['randomBytes'](0x20)['toString']('hex');
     return this['passwordResetToken'] = a6d['createHash']('sha256')['update'](a)['digest']('hex'), this['passwordResetExpires'] = Date['now']() + 0xa * 0x3c * 0x3e8, a;
 };
-const User = a6a['model']('User', userSchema);
+const User = a6a['model']('User', userSchema, 'User');
 export {
     User
 };
