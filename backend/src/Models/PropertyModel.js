@@ -124,7 +124,7 @@ propertySchema['pre']('save', function (a) {
 }), propertySchema['pre']('save', function (a) {
     this['address']['city'] = this['address']['city']['toLowerCase']()['replaceAll']('\x20', ''), a();
 });
-const Property = a5a['model']('Property', propertySchema);
+const Property = a5a['model']('Property', propertySchema, 'properties');
 export {
     Property
 };
