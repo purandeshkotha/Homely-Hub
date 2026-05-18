@@ -34,7 +34,9 @@ const PropertyListing = () => {
       amenities,
       maximumGuest,
       price,
-      currentBookings
+      currentBookings,
+      chekInTime,
+      chekOutTime
       } = propertyDetails;
   
   return (
@@ -71,7 +73,7 @@ const PropertyListing = () => {
         <hr/>
         <div className='property-map'>
           <div className='map-image-exinfo-container row'>
-            <PropertyMapInfo address={address}/>
+            <PropertyMapInfo address={address} checkIn={chekInTime} checkOut={chekOutTime}/>
           </div>
         </div>
       

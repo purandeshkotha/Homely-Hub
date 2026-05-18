@@ -45,7 +45,7 @@ const PropertyImg = ({images}) => {
       </div>
 
     <div>
-      <img className='images' src={images[5].url}
+      <img className='images' src={images[4].url}
       style={{borderBottomRightRadius:"10px"}}
       alt='property'
       />
