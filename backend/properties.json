@@ -899,39 +899,24 @@
   ],
   "images": [
     {
-      "public_id": "15a",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTar39YrDTl5S_-LI8plRrWb_qCaq-cvtCoXMpMNneBKw&s",
-      "_id": {
-        "$oid": "65c20dd8e9ef8e3b68985171"
-      }
+      "public_id": "16a",
+      "url": "https://img.freepik.com/free-photo/house-thailand-style_1388-799.jpg?size=626&ext=jpg"
     },
     {
-      "public_id": "15b",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsEN_OWy9wcej1qSgI1TBRNgsjq4zEgwnk3k5JD8-Lkw&s",
-      "_id": {
-        "$oid": "65c20dd8e9ef8e3b68985172"
-      }
+      "public_id": "16b",
+      "url": "https://img.freepik.com/free-photo/blue-sea-coconut-palms-sky_1203-4983.jpg?size=626&ext=jpg"
     },
     {
-      "public_id": "15c",
-      "url": "https://a0.muscache.com/im/pictures/4d8577d2-1df0-4a09-83ba-8c57e78f1f62.jpg?im_w=1200",
-      "_id": {
-        "$oid": "65c20dd9e9ef8e3b68985173"
-      }
+      "public_id": "16c",
+      "url": "https://img.freepik.com/free-photo/outdoor-swimming-pool_74190-2001.jpg?size=626&ext=jpg"
     },
     {
-      "public_id": "15d",
-      "url": "https://a0.muscache.com/im/pictures/1903fca4-1be7-40b2-bd79-72f2f910ae97.jpg?im_w=1200",
-      "_id": {
-        "$oid": "65c20dd9e9ef8e3b68985174"
-      }
+      "public_id": "16d",
+      "url": "https://img.freepik.com/free-photo/bedroom-interior_53876-32151.jpg?size=626&ext=jpg"
     },
     {
-      "public_id": "15e",
-      "url": "https://a0.muscache.com/im/pictures/22de1d41-bcf2-4cb8-91c5-a7b7c97e190c.jpg?im_w=1200",
-      "_id": {
-        "$oid": "65c20dd9e9ef8e3b68985175"
-      }
+      "public_id": "16e",
+      "url": "https://img.freepik.com/free-photo/dining-interior_501050-1053.jpg?size=626&ext=jpg"
     }
   ],
   "price": 4000,
