@@ -144,7 +144,7 @@ const signinToken = a => {
         !c && b['status'](0x190)['json']({ 'error': 'There\x20is\x20no\x20user\x20with\x20this\x20email' });
         const d = c['createPasswordResetToken']();
         await c['save']({ 'validateBeforeSave': ![] });
-        const e = 'http://localhost:5173/user/resetPassword/' + d;
+        const e = `${process['env']['ORIGIN_ACCESS_URL']}/user/resetPassword/` + d;
         try {
             await sendMail({
                 'email': c['email'],

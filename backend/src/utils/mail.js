@@ -1,4 +1,3 @@
-import { text } from 'express';
 import a13a from 'mailgen';
 import a13b from 'nodemailer';
 const sendMail = async a => {
@@ -9,12 +8,12 @@ const sendMail = async a => {
                     'link': 'https://homelyhub.vercel.com'
                 }
             }), c = b['generate'](a['mailGenContent']), d = b['generatePlaintext'](a['mailGenContent']), e = a13b['createTransport']({
-                'host': process['env']['MAILTRAP_SMTP_HOST'],
-                'port': process['emit']['MAILTRAP_SMTP_PORT'],
+                'host': process['env']['MAILTRAP_HOST'],
+                'port': process['env']['MAILTRAP_PORT'],
                 'secure': ![],
                 'auth': {
-                    'user': process['env']['MAILTRAP_SMTP_USER'],
-                    'pass': process['env']['MAILTRAP_SMTP_PASS']
+                    'user': process['env']['MAILTRAP_USER'],
+                    'pass': process['env']['MAILTRAP_PASS']
                 }
             }), f = {
                 'from': '<hello@homelyhub.in>',

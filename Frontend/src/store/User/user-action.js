@@ -38,7 +38,7 @@ export const updateUser = (updateUser) => async(dispatch) =>{
         dispatch(userActions.getUpdateUserRequest());
         const response = await axiosInstance.patch("/v1/rent/user/updateMe", updateUser);
         console.log("Update successful:",response.data)
-        const {data} = await axiosInstance.get("/v1/rent/user/Me");
+        const {data} = await axiosInstance.get("/v1/rent/user/me");
         dispatch(userActions.getCurrentUser(data.user))
 
     }catch(error){
