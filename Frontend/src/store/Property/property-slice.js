@@ -15,7 +15,7 @@ const propertySlice = createSlice({
         },
         getProperties(state,action){
             state.properties = action.payload.data;
-            state.totalProperties = action.payload.all_Properties;
+            state.totalProperties = action.payload.all_properties;
             state.loading = false;
         },
         updateSearchParams:(state,action) => {
@@ -25,7 +25,8 @@ const propertySlice = createSlice({
             }
         },
         getError(state, action){
-            state.error = action.payload
+            state.error = action.payload;
+            state.loading = false;
         }
 
     }

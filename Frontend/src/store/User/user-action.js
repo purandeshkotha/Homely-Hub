@@ -65,7 +65,7 @@ export const resetPassword = (repassword,token) => async(dispatch) =>{
 export const updatePassword = (passwords) => async(dispatch)=>{
     try{
         dispatch(userActions.getPasswordRequest());
-        await axiosInstance.patch("/v1/rent/user/updatedMyPassword", passwords);
+        await axiosInstance.patch("/v1/rent/user/updateMyPassword", passwords);
         dispatch(userActions.getPasswordSuccess(true))
     }catch(error){
         dispatch(userActions.getError(error.response.data.message))
