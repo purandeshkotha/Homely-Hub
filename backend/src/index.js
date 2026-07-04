@@ -24,7 +24,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app['get']('/api/v1/seed', async (req, res) => {
     try {
-        const properties = JSON.parse(readFileSync(join(__dirname, '../../properties.json'), 'utf-8'));
+        const properties = JSON.parse(readFileSync(join(__dirname, '../../../properties.json'), 'utf-8'));
         const propertyTypeMap = { guest_house: 'Guest House', house: 'House', flat: 'Flat', hotel: 'Hotel' };
         const roomTypeMap = { 'entire home': 'Entire Home', room: 'Room', anytype: 'Anytype' };
         const amenityNameMap = { wifi: 'Wifi', kitchen: 'Kitchen', ac: 'Ac', 'washing machine': 'Washing Machine', tv: 'Tv', pool: 'Pool', 'free parking': 'Free Parking' };
