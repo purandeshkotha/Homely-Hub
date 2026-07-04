@@ -18,6 +18,8 @@ import NotFound from "./components/NotFound"
 
 import Accomodation from "./components/accomodation/Accomodation"
 import AccomodationForm from "./components/accomodation/AccomodationForm"
+import ForgetPassword from "./components/user/ForgetPassword"
+import ResetPassword from "./components/user/ResetPassword"
 
 
 function App() {
@@ -57,6 +59,8 @@ function App() {
             {/* Accomodation Route */}
             <Route path="accomodation" element={<Accomodation/>} />
             <Route path="accomodationform" element={<AccomodationForm/>} />
+            <Route path="user/forgotPassword" element={<ForgetPassword/>} />
+            <Route path="user/resetPassword/:token" element={<ResetPassword/>} />
           
           
           </Route>
